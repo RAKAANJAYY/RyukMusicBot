@@ -164,10 +164,10 @@ def r_ply(type_):
                 InlineKeyboardButton("⏭", "skip")
             ],
             [
-                InlineKeyboardButton("📖 Daftar putar", "playlist"),
+                InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", "playlist"),
             ],
             [       
-                InlineKeyboardButton("🗑 Tutup", "cls")
+                InlineKeyboardButton("ᴛᴜᴛᴜᴘ", "cls")
             ]        
         ]
     )
@@ -374,11 +374,11 @@ async def m_cb(b, cb):
                 
                 ],
                 [
-                    InlineKeyboardButton("📖 Daftar putar", "playlist"),
+                    InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", "playlist"),
                 
                 ],
                 [       
-                    InlineKeyboardButton("🗑 Tutup", "cls")
+                    InlineKeyboardButton("ᴛᴜᴛᴜᴘ", "cls")
                 ]        
             ]
         )
@@ -510,10 +510,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("💡 Update", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                    InlineKeyboardButton("⚙️ Menu", callback_data="menu"),
+                    InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/KGSupportgroup"),
+                    InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
                 ],
-                [InlineKeyboardButton(text="🗑 Tutup", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="cls")],
             ]
         )
         file_name = get_file_name(audio)
@@ -556,10 +556,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("💡 Update", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                    InlineKeyboardButton("⚙️ Menu", callback_data="menu"),
+                    InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/KGSupportgroup"),
+                    InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
                 ],
-                [InlineKeyboardButton(text="🗑 Tutup", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="cls")],
             ]
         )
         requested_by = message.from_user.first_name
@@ -598,7 +598,7 @@ async def play(_, message: Message):
                         InlineKeyboardButton("4️⃣", callback_data=f'plll 3|{query}|{user_id}'),
                         InlineKeyboardButton("5️⃣", callback_data=f'plll 4|{query}|{user_id}')
                     ],
-                    [InlineKeyboardButton(text="🗑 Tutup", callback_data="cls")],
+                    [InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="cls")],
                 ]
             )
             await lel.edit(toxxt,reply_markup=keyboard,disable_web_page_preview=True)
@@ -629,10 +629,10 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("💡 Update", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                    InlineKeyboardButton("⚙️ Menu", callback_data="menu"),
+                    InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/KGSupportgroup"),
+                    InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
                 ],
-                [InlineKeyboardButton(text="🗑 Tutup", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="cls")],
             ]
         )
             requested_by = message.from_user.first_name
@@ -731,10 +731,10 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("💡 Update", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                    InlineKeyboardButton("⚙️ Menu", callback_data="menu"),
+                    InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/KGSupportgroup"),
+                    InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
                 ],
-                [InlineKeyboardButton(text="🗑 Tutup", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="cls")],
             ]
         )
     requested_by = useer_name
@@ -876,10 +876,10 @@ async def ytplay(_, message: Message):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("💡 Update", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                    InlineKeyboardButton("⚙️ Menu", callback_data="menu"),
+                    InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/KGSupportgroup"),
+                    InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
                 ],
-                [InlineKeyboardButton(text="🗑 Tutup", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="cls")],
             ]
         )
     requested_by = message.from_user.first_name
