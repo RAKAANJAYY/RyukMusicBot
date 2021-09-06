@@ -1,6 +1,6 @@
 import os
 import asyncio
-from pytgcalls import GroupCallFactory
+from pytgcalls import PyTgCalls
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from config import API_ID, API_HASH, SESSION_NAME
