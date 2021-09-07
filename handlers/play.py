@@ -906,15 +906,3 @@ async def ytplay(_, message: Message):
         reply_markup=keyboard,
     )
     os.remove("final.png")
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
