@@ -34,8 +34,8 @@ async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{BOT_IMG}",
         caption=f"""<b>🕊️ **Hallo {message.from_user.mention}** \n
-**__[{BOT_NAME}](https://t.me/{BOT_USERNAME}) Adalah sebuah bot yang dirancang untuk memutar musik di obrola suara !__**
-**__Untuk melihat beberapa perintah dalam penggunaan bot bisa klik » /help__**
+**__[{BOT_NAME}](https://t.me/{BOT_USERNAME}) Is a bot designed to play music in voice chat !__**
+**__To see some commands for using bots, click » /help__**
 </b>""",
         reply_markup=InlineKeyboardMarkup(
             [ 
@@ -44,13 +44,13 @@ async def start_(client: Client, message: Message):
                         "➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
+                        "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
                     InlineKeyboardButton(
-                        "⚙️ Source Code ⚙️", url="https://github.com/KennedyProject/KennedyXMusic"
+                        "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://github.com/KennedyProject/KennedyXMusic"
                     )
                 ]
             ]
