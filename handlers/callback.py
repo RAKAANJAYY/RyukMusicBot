@@ -11,33 +11,33 @@ from handlers.play import cb_admin_check
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""<b>🕊️ command dasar untuk bot</b>
-💡 **[ SETTING GRUP ]
-/play (judul) - memutar musik melalui YouTube
-/ytp (judul) - memutar musik secara langsung 
-/stream (balas ke audio) - memutar kusik melalui balas ke audio
-/playlist - melihat daftar antrian
-/song (judul) - mengunduh musik dari YouTube
-/video (judul) - mengunduh video dari YouTube
-/lirik - (judul) mencari lirik
-💡 [ SETTING CHANNEL ]
-/cplay - memutar musik melalui channel
-/cplayer - melihat daftar antrian
-/cpause - jeda pemutar musik
-/cresume - melanjut pemutaran musik
-/cskip - melewati ke lagu berikutnya
-/cend - memberhentikan musik
-/admincache - menyegarkan cache admin
-/ubjoinc - mengundang assisten join ke channel
+**[ GROUP SETTINGS ]
+/play (title) - play music via YouTube
+/ytp (title) - play music live
+/stream (reply to audio) - play music via reply to audio
+/playlist - view queue list
+/song (title) - download music from YouTube
+/video (title) - download videos from YouTube
+/lyrics - (title) search for lyrics
+[ CHANNEL SETTINGS ]
+/cplay - play music via channel
+/cplayer - view queue list
+/cpause - pause music player
+/cresume - resume music playing
+/cskip - skip to next song
+/cend - stops music
+/admincache - refresh admin cache
+/ubjoinc - invites assistants to join the channel
 
-💡 Bot by @{UPDATES_CHANNEL}**""",
+𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 @KGSupportgroup**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "◀️ Back", callback_data="cbguide"
+                        "⟪", callback_data="cbguide"
                     ),
                     InlineKeyboardButton(
-                        "▶️ Next", callback_data="cbadvanced"
+                        "⟫", callback_data="cbadvanced"
                     )
                 ]
             ]
@@ -50,20 +50,20 @@ async def cbadvanced(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""<b>🕊️ command lanjutan</b>
 
-**/start (di grup) - melihat alive bot
-/reload - memperbarui bot dan menyegarkan daftar admin
-/cache - memperbatui cache admin
-/ping - cek ping bot
+**/start (in group) - see alive bot
+/reload - update bot and refresh admin list
+/cache - cache admin cache
+/ping - check bot ping
 
-💡 Bot by @{UPDATES_CHANNEL}**""",
+𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 @KGSupportgroup**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "◀️ Back", callback_data="cbbasic"
+                        "⟪", callback_data="cbbasic"
                     ),
                     InlineKeyboardButton(
-                        "▶️ Next", callback_data="cbadmin"
+                        "⟫", callback_data="cbadmin"
                     )
                 ]
             ]
@@ -76,23 +76,23 @@ async def cbadmin(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""<b>🕊️ command untuk admin grup</b>
 
-**/player - melihat status pemutaran
-/pause - jeda musik yang diputar
-/resume - melanjutkan musik yang di jeda
-/skip - melewati ke lagu berikutnya
-/end - mematikan musik
-/userbotjoin - mengundang assistant untuk bergabung ke grup
-/musicplayer (on / off) - mematikan / menghidupkan pemutar musik di grupmu
+**/player - view playback status
+/pause - pauses playing music
+/resume - resume paused music
+/skip - skip to next song
+/end - mute the music
+/userbotjoin - invites assistants to join the group
+/musicplayer (on / off) - turn off / on the music player in your group
 
-💡 Bot by @{UPDATES_CHANNEL}**""",
+𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 @KGSupportgroup**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "◀️ Back", callback_data="cbadvanced"
+                        "⟪", callback_data="cbadvanced"
                     ),
                     InlineKeyboardButton(
-                        "▶️ Next", callback_data="cbsudo"
+                        "⟫", callback_data="cbsudo"
                     )
                 ]
             ]
@@ -105,20 +105,22 @@ async def cbsudo(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""<b>🕊️ command untuk sudo</b>
 
-**/userbotleaveall - mengeluarkan asisten dari semua grup
-/gcast - mengirim pesan global melalui asisten
-/rmd - menghapus semua file yang didownload
-/clean - menghapus semua file raw yang terdownload
-
-💡 Bot by @{UPDATES_CHANNEL}**""",
+**/player - view playback status
+/pause - pauses music playback
+/resume - resume paused music
+/skip - skip to next song
+/end - mute the music
+/userbotjoin - invites assistants to join the group
+/musicplayer (on/off) - turn off/on music player in your group
+𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 @KGSupportgroup**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "◀️ Back", callback_data="cbadmin"
+                        "⟪", callback_data="cbadmin"
                     ),
                     InlineKeyboardButton(
-                        "▶️ Next", callback_data="cbfun"
+                        "⟫", callback_data="cbfun"
                     )
                 ]
             ]
@@ -137,15 +139,15 @@ async def cbfun(_, query: CallbackQuery):
 /truth - cek sendiri
 /dare - cek sendiri
 
-💡 Bot by @{UPDATES_CHANNEL}**""",
+𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 @KGSupportgroup**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "◀️ Back", callback_data="cbsudo"
+                        "⟪", callback_data="cbsudo"
                     ),
                     InlineKeyboardButton(
-                        "🗑️ Close", callback_data="close"
+                        "ᴄʟᴏsᴇ", callback_data="close"
                     )
                 ]
             ]
@@ -158,22 +160,22 @@ async def cbguide(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""CARA MENGGUNAKAN BOT INI :
 
-**1.) Pertama, tambahkan ke grupmu.
-2.) Kemudian jadikan admin dengan semua izin kecuali admin anonim.
-3.) Tambahkan @{ASSISTANT_NAME} ke grupmu atau bisa ketik `/userbotjoin` untuk mengundang assistant.
-4.) Nyalakan obrolan suara terlebih dahulu sebelum memutar musik.
+**1.) First, add it to your group.
+2.) Then make admin with all permissions except anonymous admin.
+3.) Add @{ASSISTANT_NAME} to your group or you can type `/userbotjoin` to invite assistant.
+4.) Turn on voice chat first before playing music.
 
-💡 Bot by @{UPDATES_CHANNEL}**""",
+𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 @KGSupportgroup**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🕊️ Daftar perintah", callback_data="cbbasic"
+                        "ᴄᴏᴍᴍᴀɴᴅs", callback_data="cbbasic"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗑 Close", callback_data="close"
+                        "ᴄʟᴏsᴇ", callback_data="close"
                     )
                 ]
             ]
